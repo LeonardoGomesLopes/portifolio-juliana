@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Patua+One&display=swap');
+
+:root {
+    --cor-principal: #f7bfb4;
+    --cor-secundaria: purple;
+    --cor-sombras: rgb(126, 84, 126);
+    --cor-fonte: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Patua One', cursive;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.destaque-h1 {
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: solid  2px  var(--cor-secundaria);
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: 'Patua One', cursive;
+    font-size: 3rem;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8125rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__insta {
+    border: 2px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    padding: 21px 0;
+    font-family: 'Patua One', cursive;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    box-shadow: 10px 10px var(--cor-sombras);
+}
+
+.ju {
+    border-style: solid;
+    box-shadow: 10px 10px var(--cor-sombras);
+    width: 50%;
+}
+
+.apresentacao__links__insta:hover {
+    box-shadow: 20px 20px var(--cor-sombras);
+    background-color: #f7c8be;
+}
+
+.rodape {
+    padding: 30px;
+    color: white;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding:10%
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
